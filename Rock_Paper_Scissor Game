@@ -1,0 +1,37 @@
+
+#Have played rock paper scissor a lot in our childhood. 
+#Let's try a code for this !!
+
+player1= {0: "Rock", 1:"Paper", 2:"Scissor"}
+player2= {0: "Rock", 1:"Scissor", 2:"Paper"}
+
+def  rock_paper_scissor(num1,num2,bit1,bit2):
+    p1=int(num1[bit1])%3      #p1 and p2 are placeholders- secret bit...
+    p2=int(num2[bit2])%3
+    if(player1[p1]==player2[p2]):
+        print("Draw")
+    elif(player1[p1]=="Rock" and player2[p2]=="Scissor"):
+        print("player1 wins!!")
+    elif(player1[p1]=="Rock" and player2[p2]=="Paper"):
+        print("player2 wins!!")
+    elif(player1[p1]=="Paper" and player2[p2]=="Scissor"):
+        print("player2 wins!!")
+    elif(player1[p1]=="Scissor" and player2[p2]=="Paper"):
+        print("player1 wins!!")
+    elif(player1[p1]=="Paper" and player2[p2]=="Rock"):
+        print("player1 wins!!")
+    elif(player1[p1]=="Scissor" and player2[p2]=="Rock"):
+        print("player2 wins!!")
+    
+    
+
+while(1):
+    num1=input("Player one, enter your choice: ")
+    num2= input("Player two, enter your choice: ")
+    bit1= int(input("Player one, enter your secret bit position: "))
+    bit2= int(input("Player two, enter your secret bit position: "))
+    rock_paper_scissor(num1,num2,bit1,bit2)
+    choice= input("Do you want to continue?? (y/n): ")
+    if choice==n:
+        break
+    
