@@ -1,0 +1,18 @@
+
+#Turtle Library is something very interesting and a must one to explore !!
+
+import turtle
+
+t = turtle.Turtle()
+s= turtle.Screen()
+
+s.bgcolor('black')
+t.width(2)
+t.speed(15)
+
+col=('yellow','green','red','blue')
+
+for i in range (80):
+    t.pencolor(col[i%4])
+    t.forward(i*4)
+    t.right(137)
